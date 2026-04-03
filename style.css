@@ -1,0 +1,513 @@
+/* ================================================
+   PLEXEN - Feuille de style
+   Simple, elementaire, pour debutant
+   ================================================ */
+
+
+/* ---------- RESET DE BASE ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #222222;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* ---------- EN-TETE ---------- */
+.entete {
+    background-color: #ffffff;
+    border-bottom: 3px solid #e67e22;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.entete-interieur {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 60px;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+.navigation {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.lien-nav {
+    padding: 8px 14px;
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333333;
+}
+
+.lien-nav:hover {
+    background-color: #e67e22;
+    color: #ffffff;
+}
+
+.lien-nav.actif {
+    background-color: #c0392b;
+    color: #ffffff;
+    border-color: #c0392b;
+}
+
+.lien-contact {
+    background-color: #c0392b;
+    color: #ffffff;
+    border-color: #c0392b;
+}
+
+.lien-contact:hover {
+    background-color: #a93226;
+}
+
+
+/* ---------- SECTION ACCUEIL (HERO) ---------- */
+.section-accueil {
+    background-color: #1e2a3e;
+    background-image: url('images/transformateur-hta-htb.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.accueil-interieur {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accueil-label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e67e22;
+    margin-bottom: 16px;
+}
+
+.accueil-titre {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.accueil-sous-titre {
+    font-size: 16px;
+    color: #bbbbbb;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.accueil-liste {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #dddddd;
+}
+
+.accueil-liste li {
+    font-size: 15px;
+    padding: 4px 0;
+}
+
+.bouton-principal {
+    display: inline-block;
+    background-color: #c0392b;
+    color: #ffffff;
+    padding: 14px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.bouton-principal:hover {
+    background-color: #a93226;
+    color: #ffffff;
+}
+
+
+/* ---------- CONTENU GENERAL ---------- */
+.contenu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.titre-section {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1e2a3e;
+    margin-bottom: 8px;
+}
+
+.trait-titre {
+    width: 60px;
+    height: 4px;
+    background-color: #e67e22;
+    margin-bottom: 30px;
+}
+
+
+/* ---------- PAGE EXPERTISE ---------- */
+.fond-photo {
+    background-color: #1e2a3e;
+    background-image: url('images/poste-htb-construction.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+}
+
+.titre-blanc {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    max-width: 1100px;
+    margin: 0 auto 8px auto;
+}
+
+.carte-presentation {
+    background-color: #ffffff;
+    border-left: 5px solid #e67e22;
+    border-radius: 4px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.carte-presentation p {
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+.texte-important {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.boite-badges {
+    margin-bottom: 16px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #c0392b;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.boite-partenaire {
+    background-color: #1e2a3e;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin: 20px 0;
+}
+
+.boite-partenaire p {
+    color: #dddddd;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* ---------- PAGE SERVICES ---------- */
+.grille-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.carte-service {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 20px;
+    border-bottom: 3px solid #e67e22;
+}
+
+.carte-service h3 {
+    font-size: 16px;
+    color: #1e2a3e;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.carte-service li {
+    font-size: 14px;
+    color: #555555;
+    padding: 4px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.carte-service li:last-child {
+    border-bottom: none;
+}
+
+
+/* ---------- PAGE REALISATIONS ---------- */
+.grille-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.carte-photo {
+    background-color: #1e2a3e;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.carte-photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.legende-photo {
+    padding: 10px 14px;
+    color: #ffffff;
+}
+
+.legende-photo h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.legende-photo p {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+
+/* ---------- PAGE CONTACT ---------- */
+.grille-contact {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.boite-coordonnees {
+    background-color: #c0392b;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.boite-coordonnees h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.boite-coordonnees ul {
+    padding-left: 18px;
+}
+
+.boite-coordonnees li {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.separateur {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 16px 0;
+}
+
+.slogan {
+    margin-top: 16px;
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.85;
+    border-left: 3px solid rgba(255, 255, 255, 0.4);
+    padding-left: 10px;
+}
+
+.boite-carte {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.boite-formulaire {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.boite-formulaire p {
+    font-weight: bold;
+    color: #1e2a3e;
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+.boite-formulaire input,
+.boite-formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #f9f9f9;
+}
+
+.boite-formulaire input:focus,
+.boite-formulaire textarea:focus {
+    border-color: #e67e22;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.boite-formulaire textarea {
+    resize: vertical;
+}
+
+.bouton-formulaire {
+    width: 100%;
+    background-color: #c0392b;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bouton-formulaire:hover {
+    background-color: #a93226;
+}
+
+
+/* ---------- PIED DE PAGE ---------- */
+.pied-de-page {
+    background-color: #0f1e2d;
+    color: #cccccc;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+.pied-interieur {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pied-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e67e22;
+    margin-bottom: 6px;
+}
+
+.pied-slogan {
+    font-style: italic;
+    color: #f39c12;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.pied-infos {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 2;
+}
+
+.pied-legal {
+    font-size: 12px;
+    color: #555555;
+}
+
+.pied-separateur {
+    border: none;
+    border-top: 1px solid #1e3044;
+    margin: 14px 0;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #444444;
+}
+
+
+/* ---------- RESPONSIVE (mobile) ---------- */
+@media (max-width: 768px) {
+
+    .entete-interieur {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .accueil-titre {
+        font-size: 20px;
+    }
+
+    .grille-services {
+        grid-template-columns: 1fr;
+    }
+
+    .grille-photos {
+        grid-template-columns: 1fr;
+    }
+
+    .grille-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .contenu {
+        padding: 30px 14px;
+    }
+
+}
