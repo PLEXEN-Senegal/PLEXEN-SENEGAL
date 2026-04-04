@@ -1,123 +1,224 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PLEXEN - Bureau d'etudes en genie electrique. Dakar, Senegal.">
-    <title>PLEXEN - Realisations</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réalisations — PLEXEN</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <div class="header-inner">
-        <a href="index.html" class="logo">
-            <img src="images/logo-plexen.png" alt="Logo PLEXEN">
-        </a>
-        <nav>
-        <a href="index.html" class="nav-lien">Accueil</a>
-        <a href="expertise.html" class="nav-lien">Expertise</a>
-        <a href="services.html" class="nav-lien">Services</a>
-        <a href="realisations.html" class="nav-lien active">Realisations</a>
-        <a href="contact.html" class="nav-lien btn-nav">Contact</a>
-        </nav>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="images/logo-plexen.png" alt="PLEXEN"></a>
+      <ul class="nav-liens" id="navLiens">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="realisations.html" class="actif">Réalisations</a></li>
+        <li><a href="contact.html" class="nav-btn">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
     </div>
-</header>
+  </nav>
 
-<main>
-    <div class="contenu">
-        <h2 class="titre">Realisations &amp; Projets references</h2>
-        <div class="ligne"></div>
-        <div class="photos-grille">
+  <section class="entete-page">
+    <div class="entete-page-contenu">
+      <h1>Nos Réalisations</h1>
+      <p>Une sélection de nos projets réalisés au Sénégal et en Afrique de l'Ouest</p>
+      <div class="fil-ariane">
+        <a href="index.html">Accueil</a>
+        <span>/</span>
+        <span>Réalisations</span>
+      </div>
+    </div>
+  </section>
 
-            <div class="photo-item">
-                <img src="images/poste-htb-construction.jpg" alt="Poste HTB en construction">
-                <div class="photo-legende">
-                    <h3>Poste HTB en construction</h3>
-                    <p>Supervision chantier - Senegal</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="images/transformateur-hta-htb.jpg" alt="Transformateur HTA/HTB">
-                <div class="photo-legende">
-                    <h3>Transformateur HTA/HTB</h3>
-                    <p>Poste de transformation - Region Centre</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="images/poste-transformateur-coucher-soleil.jpg" alt="Transformateur de puissance">
-                <div class="photo-legende">
-                    <h3>Transformateur de puissance</h3>
-                    <p>Installation - Dakar</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="images/cellules-hta-blindees.jpg" alt="Cellules HTA blindees">
-                <div class="photo-legende">
-                    <h3>Cellules HTA blindees</h3>
-                    <p>Armoire distribution MT - Louga</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="images/equipe-chantier-poste-electrique.jpg" alt="Equipe technique sur site">
-                <div class="photo-legende">
-                    <h3>Equipe technique sur site</h3>
-                    <p>Inspection poste electrique - Dakar</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="images/armoire-distribution-bt.jpg" alt="Armoire de distribution BT">
-                <div class="photo-legende">
-                    <h3>Armoire de distribution BT</h3>
-                    <p>Tableau general BT - Parcelles Assainies</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="images/cable-souterrain-tranchee.jpg" alt="Cable souterrain en tranchee">
-                <div class="photo-legende">
-                    <h3>Cable souterrain en tranchee</h3>
-                    <p>Extension reseau souterrain - Thies</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="images/lignes-aeriennes-bt.jpg" alt="Lignes aeriennes BT">
-                <div class="photo-legende">
-                    <h3>Lignes aeriennes BT</h3>
-                    <p>Reseau aerien rural - Kaolack</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="images/poste-compact-3md.jpg" alt="Poste compact 3MD">
-                <div class="photo-legende">
-                    <h3>Poste compact 3MD</h3>
-                    <p>Transformation HTA/BT - Zone rurale</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="images/supervision-scada.jpg" alt="Supervision SCADA">
-                <div class="photo-legende">
-                    <h3>Supervision SCADA</h3>
-                    <p>Salle de controle - Dakar</p>
-                </div>
-            </div>
+  <section class="section-portfolio">
+    <div class="container">
+      <div class="titre-section" data-anime>
+        <span class="etiquette-section">Notre portfolio</span>
+        <h2>Projets Réalisés</h2>
+      </div>
+      <div class="grille-portfolio">
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/poste-htb-construction.jpg" alt="Poste HTB">
+          </div>
+          <div class="projet-corps">
+            <h3>Construction Poste HTB</h3>
+            <p>Construction et mise en service d'un poste source Haute Tension B. Génie civil, montage appareillage et câblage complet.</p>
+            <span class="projet-tag">HTB — Poste Source</span>
+          </div>
         </div>
-    </div>
-</main>
 
-<footer>
-    <div class="footer-inner">
-        <div class="footer-logo">PLEXEN</div>
-        <p class="footer-slogan">"L'impossible on l'a fait Hier - Pour le miracle donnez-nous jusqu'a demain"</p>
-        <div class="footer-infos">
-            <span>Parcelles Assainies U 19, Dakar</span>
-            <span>Tel : 75 503 12 96 / 33 885 58 11</span>
-            <span>Email : Plexen.senegal@gmail.com</span>
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/cellules-hta-blindees.jpg" alt="Cellules HTA">
+          </div>
+          <div class="projet-corps">
+            <h3>Cellules HTA Blindées</h3>
+            <p>Fourniture, montage et mise en service de cellules HTA blindées SF6 pour poste de distribution publique.</p>
+            <span class="projet-tag">HTA — Distribution</span>
+          </div>
         </div>
-        <p class="footer-legal">NINEA 011635086 - RCCM SN THS 2024 A 6152 | Partenaire agree SENELEC</p>
-        <hr>
-        <p class="copyright">&copy; 2025 PLEXEN - Tous droits reserves.</p>
-    </div>
-</footer>
 
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/transformateur-hta-htb.jpg" alt="Transformateur">
+          </div>
+          <div class="projet-corps">
+            <h3>Transformateur de Puissance HTA/HTB</h3>
+            <p>Installation et mise en service d'un transformateur de puissance HTA/HTB. Raccordements, essais et mise sous tension.</p>
+            <span class="projet-tag">HTA/HTB — Transformateur</span>
+          </div>
+        </div>
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/cable-souterrain-tranchee.jpg" alt="Câblage souterrain">
+          </div>
+          <div class="projet-corps">
+            <h3>Câblage Souterrain HTA</h3>
+            <p>Réalisation de tranchées et pose de câbles souterrains HTA en milieu urbain. Signalisation et remblaiement conformes.</p>
+            <span class="projet-tag">HTA — Souterrain</span>
+          </div>
+        </div>
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/armoire-distribution-bt.jpg" alt="Armoire BT">
+          </div>
+          <div class="projet-corps">
+            <h3>Armoire de Distribution BT</h3>
+            <p>Conception et réalisation d'armoires de distribution Basse Tension avec analyseur d'énergie et protection différentielle.</p>
+            <span class="projet-tag">BT — Distribution</span>
+          </div>
+        </div>
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/poste-compact-3md.jpg" alt="Poste compact">
+          </div>
+          <div class="projet-corps">
+            <h3>Poste Compact 3MD</h3>
+            <p>Installation de postes compacts préfabriqués type 3MD pour la distribution d'électricité en zone périurbaine.</p>
+            <span class="projet-tag">HTA — Poste Compact</span>
+          </div>
+        </div>
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/lignes-aeriennes-bt.jpg" alt="Lignes aériennes">
+          </div>
+          <div class="projet-corps">
+            <h3>Lignes Aériennes BT</h3>
+            <p>Construction de lignes aériennes basse tension en zone rurale. Pose de poteaux et déroulage de câbles torsadés.</p>
+            <span class="projet-tag">BT — Aérien</span>
+          </div>
+        </div>
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/cabine-hta-murale.jpg" alt="Cabine HTA">
+          </div>
+          <div class="projet-corps">
+            <h3>Cabine HTA Murale</h3>
+            <p>Réhabilitation et raccordement d'une cabine HTA murale existante. Remplacement des équipements vétustes et mise aux normes.</p>
+            <span class="projet-tag">HTA — Cabine</span>
+          </div>
+        </div>
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/supervision-scada.jpg" alt="SCADA">
+          </div>
+          <div class="projet-corps">
+            <h3>Système SCADA</h3>
+            <p>Mise en place d'un système de supervision et téléconduite pour la gestion en temps réel d'un réseau de distribution.</p>
+            <span class="projet-tag">SCADA — Supervision</span>
+          </div>
+        </div>
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/poste-transformateur-coucher-soleil.jpg" alt="Poste transformateur">
+          </div>
+          <div class="projet-corps">
+            <h3>Poste Transformateur HTB</h3>
+            <p>Réalisation d'un poste transformateur HTB avec protection différentielle, parafoudres et mise à la terre.</p>
+            <span class="projet-tag">HTB — Transformateur</span>
+          </div>
+        </div>
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/equipe-chantier-poste-electrique.jpg" alt="Équipe chantier">
+          </div>
+          <div class="projet-corps">
+            <h3>Chantier Poste Électrique</h3>
+            <p>Supervision et coordination d'un chantier de construction de poste électrique avec équipes pluridisciplinaires.</p>
+            <span class="projet-tag">HTB — Maîtrise d'œuvre</span>
+          </div>
+        </div>
+
+        <div class="projet-card" data-anime>
+          <div class="projet-img">
+            <img src="images/transformateur-hta-htb.jpg" alt="Installation équipements">
+          </div>
+          <div class="projet-corps">
+            <h3>Installation Équipements HTB</h3>
+            <p>Montage, raccordement et mise en service d'équipements HTB sur site existant. Essais de mise en tension.</p>
+            <span class="projet-tag">HTB — Installation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bande-cta">
+    <div class="container bande-contenu">
+      <div data-anime>
+        <h2>Votre projet sera notre prochaine réalisation</h2>
+        <p>Contactez-nous dès aujourd'hui pour en discuter</p>
+      </div>
+      <a href="contact.html" class="btn-cta" data-anime>Démarrer un projet</a>
+    </div>
+  </section>
+
+  <footer class="pied-de-page">
+    <div class="container">
+      <div class="footer-grille">
+        <div class="footer-col">
+          <img src="images/logo-plexen.png" alt="PLEXEN" class="footer-logo">
+          <p>Bureau d'études spécialisé en génie électrique. Partenaire agréé SENELEC.</p>
+          <p class="footer-info">NINEA : 011635086 | RCCM : SN THS 2024 A 6152</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="expertise.html">Expertise</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>📍 Parcelles Assainies U19 Villa 176, Dakar</li>
+            <li>📞 75 503 12 96 / 33 885 58 11</li>
+            <li>✉️ Plexen.senegal@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bas"><p>© 2024 PLEXEN — Tous droits réservés</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

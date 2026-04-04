@@ -1,86 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PLEXEN - Bureau d'etudes en genie electrique. Dakar, Senegal.">
-    <title>PLEXEN - Expertise</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expertise — PLEXEN</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <div class="header-inner">
-        <a href="index.html" class="logo">
-            <img src="images/logo-plexen.png" alt="Logo PLEXEN">
-        </a>
-        <nav>
-        <a href="index.html" class="nav-lien">Accueil</a>
-        <a href="expertise.html" class="nav-lien active">Expertise</a>
-        <a href="services.html" class="nav-lien">Services</a>
-        <a href="realisations.html" class="nav-lien">Realisations</a>
-        <a href="contact.html" class="nav-lien btn-nav">Contact</a>
-        </nav>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><img src="images/logo-plexen.png" alt="PLEXEN"></a>
+      <ul class="nav-liens" id="navLiens">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="expertise.html" class="actif">Expertise</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="contact.html" class="nav-btn">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger"><span></span><span></span><span></span></button>
     </div>
-</header>
+  </nav>
 
-<main>
-    <div class="page-bg">
-        <h2 class="titre-w">Notre Bureau d'Etudes</h2>
-        <div class="ligne-w"></div>
-        <div class="pres-card">
-            <div class="badges">
-                <span class="badge">Bureau d'etudes &amp; ingenierie</span>
-                <span class="badge">Expertise HTA/BT</span>
-                <span class="badge">Partenaire SENELEC</span>
-            </div>
-            <p>
-                <strong class="hl">PLEXEN (Plateaux des experts de l'energie)</strong>
-                est un bureau d'etudes techniques specialise en
-                <strong class="hl">genie electrique et ingenierie des reseaux</strong>.
-                Notre coeur de metier s'articule autour du
-                <strong class="hl">courant fort (HTA/BT)</strong> et du
-                <strong class="hl">courant faible (CFA)</strong>,
-                integrant l'automatisme, la supervision industrielle et les infrastructures critiques.
-            </p>
-            <p>
-                Fort d'une <strong class="hl">equipe pluridisciplinaire d'ingenieurs</strong>,
-                nous maitrisons l'integralite du cycle de vie des projets :
-                de l'<strong class="hl">avant-projet sommaire (APS)</strong>
-                a la <strong class="hl">reception technique des ouvrages</strong>.
-            </p>
-            <div class="partner-box">
-                <p>
-                    <strong>Partenaire technique agree SENELEC</strong><br>
-                    PLEXEN collabore avec SENELEC, premiere entreprise d'electricite du Senegal,
-                    sur des projets de renforcement et d'extension des reseaux HTA/BT.
-                </p>
-            </div>
-            <p>
-                Notre savoir-faire s'etend a la
-                <strong class="hl">fourniture de materiels electriques certifies</strong>
-                (cables HTA/BT, transformateurs, cellules HTA, armoires de distribution).
-                La conformite aux <strong class="hl">normes (CEI, NFC 15-100, C13-100)</strong>
-                est au coeur de notre approche.
-            </p>
+  <section class="entete-page">
+    <div class="entete-page-contenu">
+      <h1>Notre Expertise</h1>
+      <p>Des compétences techniques reconnues au service de vos projets électriques</p>
+      <div class="fil-ariane">
+        <a href="index.html">Accueil</a>
+        <span>/</span>
+        <span>Expertise</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-expertise">
+    <div class="container">
+      <div class="titre-section" data-anime>
+        <span class="etiquette-section">Nos domaines</span>
+        <h2>Domaines d'Expertise Technique</h2>
+      </div>
+      <div class="grille-expertise">
+        <div class="carte-expertise" data-anime>
+          <div class="expertise-icone">⚡</div>
+          <h3>Réseaux HTA</h3>
+          <p>Conception, dimensionnement et réalisation de réseaux Haute Tension A (HTA). Études de protection, plans unifilaires et calculs de chute de tension.</p>
         </div>
-    </div>
-</main>
-
-<footer>
-    <div class="footer-inner">
-        <div class="footer-logo">PLEXEN</div>
-        <p class="footer-slogan">"L'impossible on l'a fait Hier - Pour le miracle donnez-nous jusqu'a demain"</p>
-        <div class="footer-infos">
-            <span>Parcelles Assainies U 19, Dakar</span>
-            <span>Tel : 75 503 12 96 / 33 885 58 11</span>
-            <span>Email : Plexen.senegal@gmail.com</span>
+        <div class="carte-expertise" data-anime>
+          <div class="expertise-icone">🏭</div>
+          <h3>Postes HTB</h3>
+          <p>Construction et mise en service de postes Haute Tension B (HTB). Jeux de barres, appareillages de coupure, transformateurs de puissance.</p>
         </div>
-        <p class="footer-legal">NINEA 011635086 - RCCM SN THS 2024 A 6152 | Partenaire agree SENELEC</p>
-        <hr>
-        <p class="copyright">&copy; 2025 PLEXEN - Tous droits reserves.</p>
+        <div class="carte-expertise" data-anime>
+          <div class="expertise-icone">🔌</div>
+          <h3>Réseaux BT</h3>
+          <p>Distribution Basse Tension, armoires de distribution, colonnes montantes, éclairage public et installations tertiaires industrielles.</p>
+        </div>
+        <div class="carte-expertise" data-anime>
+          <div class="expertise-icone">🛡️</div>
+          <h3>Protection & Contrôle</h3>
+          <p>Études de protection des réseaux, relayage, automatismes et systèmes de contrôle-commande. Paramétrage et mise en service des relais.</p>
+        </div>
+        <div class="carte-expertise" data-anime>
+          <div class="expertise-icone">💻</div>
+          <h3>Supervision SCADA</h3>
+          <p>Mise en place de systèmes SCADA, téléconduite des réseaux, interfaces homme-machine (IHM) et collecte de données à distance.</p>
+        </div>
+        <div class="carte-expertise" data-anime>
+          <div class="expertise-icone">📋</div>
+          <h3>Études & Contrôle</h3>
+          <p>Maîtrise d'œuvre, contrôle de conformité, suivi de chantier et réception des travaux. Rapports d'inspection et de mise en service.</p>
+        </div>
+      </div>
     </div>
-</footer>
+  </section>
 
+  <section class="section-presentation" style="background:var(--gris-clair)">
+    <div class="container deux-cols">
+      <div class="col-image" data-anime>
+        <div class="cadre-image">
+          <img src="images/cellules-hta-blindees.jpg" alt="Cellules HTA blindées">
+        </div>
+      </div>
+      <div class="col-texte" data-anime>
+        <span class="etiquette-section">Partenaire SENELEC</span>
+        <h2>Une expertise reconnue par les plus grands acteurs du secteur</h2>
+        <p>PLEXEN est un partenaire agréé de SENELEC, la Société Nationale d'Electricité du Sénégal. Cette accréditation témoigne de la qualité de nos interventions et de notre respect des normes en vigueur.</p>
+        <p>Notre équipe pluridisciplinaire compte des ingénieurs électriciens, des techniciens de maintenance et des chefs de projet expérimentés, capables de gérer des projets de toute envergure.</p>
+        <a href="contact.html" class="btn-principal">Travailler avec nous</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bande-cta">
+    <div class="container bande-contenu">
+      <div data-anime>
+        <h2>Votre projet mérite les meilleurs experts</h2>
+        <p>Contactez-nous pour discuter de votre projet</p>
+      </div>
+      <a href="contact.html" class="btn-cta" data-anime>Demander un devis</a>
+    </div>
+  </section>
+
+  <footer class="pied-de-page">
+    <div class="container">
+      <div class="footer-grille">
+        <div class="footer-col">
+          <img src="images/logo-plexen.png" alt="PLEXEN" class="footer-logo">
+          <p>Bureau d'études spécialisé en génie électrique. Partenaire agréé SENELEC.</p>
+          <p class="footer-info">NINEA : 011635086 | RCCM : SN THS 2024 A 6152</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="expertise.html">Expertise</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>📍 Parcelles Assainies U19 Villa 176, Dakar</li>
+            <li>📞 75 503 12 96 / 33 885 58 11</li>
+            <li>✉️ Plexen.senegal@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bas"><p>© 2024 PLEXEN — Tous droits réservés</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

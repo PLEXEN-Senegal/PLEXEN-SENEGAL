@@ -1,60 +1,252 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PLEXEN - Bureau d'etudes en genie electrique. Dakar, Senegal.">
-    <title>PLEXEN - Accueil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PLEXEN - Bureau d'études en génie électrique. Partenaire agréé SENELEC, Dakar Sénégal.">
+  <title>PLEXEN — Génie Électrique</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <div class="header-inner">
-        <a href="index.html" class="logo">
-            <img src="images/logo-plexen.png" alt="Logo PLEXEN">
-        </a>
-        <nav>
-        <a href="index.html" class="nav-lien active">Accueil</a>
-        <a href="expertise.html" class="nav-lien">Expertise</a>
-        <a href="services.html" class="nav-lien">Services</a>
-        <a href="realisations.html" class="nav-lien">Realisations</a>
-        <a href="contact.html" class="nav-lien btn-nav">Contact</a>
-        </nav>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo-plexen.png" alt="PLEXEN">
+      </a>
+      <ul class="nav-liens" id="navLiens">
+        <li><a href="index.html" class="actif">Accueil</a></li>
+        <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="contact.html" class="nav-btn">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-</header>
+  </nav>
 
-<main>
-    <div class="hero">
-        <div class="hero-inner">
-            <span class="hero-label">Bureau d'etudes techniques - Dakar, Senegal</span>
-            <h1>PLEXEN | Ingenierie Electrique &amp; Partenaire Strategique</h1>
-            <p class="hero-sub">L'excellence technique au service de vos infrastructures energetiques</p>
-            <ul class="hero-liste">
-                <li>Etudes &amp; calculs electriques - Reseaux HTA/BT</li>
-                <li>Cartographie topographique &amp; Genie civil</li>
-                <li>Realisation HTA/BT - Dimensionnement solaire</li>
-                <li>Fourniture cables electriques &amp; accessoires</li>
-            </ul>
-            <a href="contact.html" class="btn">Demander un devis technique</a>
+  <section class="hero">
+    <div class="slider" id="slider">
+      <div class="diapo actif-diapo" style="background-image:url('images/poste-htb-construction.jpg')">
+        <div class="diapo-voile"></div>
+        <div class="diapo-contenu">
+          <span class="badge-hero" data-anime>Partenaire agréé SENELEC</span>
+          <h1 data-anime>L'Excellence<br><span>en Génie Électrique</span></h1>
+          <p data-anime>Bureau d'études spécialisé — Étude, Contrôle et Réalisation de projets électriques au Sénégal</p>
+          <div class="hero-boutons" data-anime>
+            <a href="services.html" class="btn-principal">Nos Services</a>
+            <a href="contact.html" class="btn-contour">Nous Contacter</a>
+          </div>
         </div>
-    </div>
-</main>
-
-<footer>
-    <div class="footer-inner">
-        <div class="footer-logo">PLEXEN</div>
-        <p class="footer-slogan">"L'impossible on l'a fait Hier - Pour le miracle donnez-nous jusqu'a demain"</p>
-        <div class="footer-infos">
-            <span>Parcelles Assainies U 19, Dakar</span>
-            <span>Tel : 75 503 12 96 / 33 885 58 11</span>
-            <span>Email : Plexen.senegal@gmail.com</span>
+      </div>
+      <div class="diapo" style="background-image:url('images/cellules-hta-blindees.jpg')">
+        <div class="diapo-voile"></div>
+        <div class="diapo-contenu">
+          <span class="badge-hero" data-anime>Expertise HTA / HTB</span>
+          <h1 data-anime>Solutions<br><span>Haute Tension</span></h1>
+          <p data-anime>Conception et réalisation de postes HTA/HTB, cellules blindées et transformateurs</p>
+          <div class="hero-boutons" data-anime>
+            <a href="expertise.html" class="btn-principal">Notre Expertise</a>
+            <a href="realisations.html" class="btn-contour">Nos Réalisations</a>
+          </div>
         </div>
-        <p class="footer-legal">NINEA 011635086 - RCCM SN THS 2024 A 6152 | Partenaire agree SENELEC</p>
-        <hr>
-        <p class="copyright">&copy; 2025 PLEXEN - Tous droits reserves.</p>
+      </div>
+      <div class="diapo" style="background-image:url('images/equipe-chantier-poste-electrique.jpg')">
+        <div class="diapo-voile"></div>
+        <div class="diapo-contenu">
+          <span class="badge-hero" data-anime>Équipe Professionnelle</span>
+          <h1 data-anime>Une Équipe<br><span>à Votre Service</span></h1>
+          <p data-anime>Des ingénieurs et techniciens expérimentés pour tous vos projets électriques</p>
+          <div class="hero-boutons" data-anime>
+            <a href="contact.html" class="btn-principal">Demander un Devis</a>
+            <a href="realisations.html" class="btn-contour">Nos Projets</a>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
+    <div class="slider-controles">
+      <button class="prev-btn" id="prevBtn">&#8592;</button>
+      <div class="points" id="points">
+        <span class="point actif-point"></span>
+        <span class="point"></span>
+        <span class="point"></span>
+      </div>
+      <button class="next-btn" id="nextBtn">&#8594;</button>
+    </div>
+  </section>
 
+  <section class="section-chiffres">
+    <div class="container">
+      <div class="chiffre-item" data-anime>
+        <span class="chiffre-num" data-cible="15">0</span><span class="chiffre-signe">+</span>
+        <p>Années d'expérience</p>
+      </div>
+      <div class="chiffre-item" data-anime>
+        <span class="chiffre-num" data-cible="120">0</span><span class="chiffre-signe">+</span>
+        <p>Projets réalisés</p>
+      </div>
+      <div class="chiffre-item" data-anime>
+        <span class="chiffre-num" data-cible="50">0</span><span class="chiffre-signe">+</span>
+        <p>Clients satisfaits</p>
+      </div>
+      <div class="chiffre-item" data-anime>
+        <span class="chiffre-num" data-cible="8">0</span><span class="chiffre-signe"></span>
+        <p>Régions couvertes</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-presentation">
+    <div class="container deux-cols">
+      <div class="col-texte" data-anime>
+        <span class="etiquette-section">Qui sommes-nous</span>
+        <h2>PLEXEN, votre partenaire de confiance en électricité</h2>
+        <p>Fondée et basée à Dakar, PLEXEN est un bureau d'études spécialisé en génie électrique. Nous intervenons sur l'ensemble du territoire sénégalais pour la conception, le contrôle et la réalisation de projets électriques de toute envergure.</p>
+        <p>Partenaire agréé SENELEC, nous disposons d'une expertise reconnue dans les domaines HTA, HTB et BT, appuyée par une équipe d'ingénieurs et techniciens qualifiés.</p>
+        <ul class="liste-atouts">
+          <li><span class="check">✓</span> Bureau d'études certifié</li>
+          <li><span class="check">✓</span> Partenaire agréé SENELEC</li>
+          <li><span class="check">✓</span> Couverture nationale</li>
+          <li><span class="check">✓</span> Équipe pluridisciplinaire</li>
+        </ul>
+        <a href="expertise.html" class="btn-principal">Découvrir notre expertise</a>
+      </div>
+      <div class="col-image" data-anime>
+        <div class="cadre-image">
+          <img src="images/supervision-scada.jpg" alt="Supervision SCADA PLEXEN">
+          <div class="badge-image">NINEA : 011635086</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-services">
+    <div class="container">
+      <div class="titre-section" data-anime>
+        <span class="etiquette-section">Ce que nous faisons</span>
+        <h2>Nos Domaines d'Intervention</h2>
+      </div>
+      <div class="grille-services">
+        <div class="carte-service" data-anime>
+          <div class="carte-img"><img src="images/poste-htb-construction.jpg" alt="Études"></div>
+          <div class="carte-corps">
+            <div class="carte-icone">⚡</div>
+            <h3>Études Électriques</h3>
+            <p>Conception et dimensionnement de réseaux HTA, HTB et BT. Bilans de puissance et schémas unifilaires.</p>
+            <a href="services.html" class="lien-carte">En savoir plus →</a>
+          </div>
+        </div>
+        <div class="carte-service" data-anime>
+          <div class="carte-img"><img src="images/cellules-hta-blindees.jpg" alt="Réalisation"></div>
+          <div class="carte-corps">
+            <div class="carte-icone">🔧</div>
+            <h3>Réalisation & Installation</h3>
+            <p>Montage et mise en service de postes HTA/HTB, cellules blindées et équipements BT.</p>
+            <a href="services.html" class="lien-carte">En savoir plus →</a>
+          </div>
+        </div>
+        <div class="carte-service" data-anime>
+          <div class="carte-img"><img src="images/cable-souterrain-tranchee.jpg" alt="Câblage"></div>
+          <div class="carte-corps">
+            <div class="carte-icone">🏗️</div>
+            <h3>Câblage Souterrain</h3>
+            <p>Pose de câbles souterrains HTA et BT. Tranchées, fourreaux, tirage et raccordement.</p>
+            <a href="services.html" class="lien-carte">En savoir plus →</a>
+          </div>
+        </div>
+        <div class="carte-service" data-anime>
+          <div class="carte-img"><img src="images/supervision-scada.jpg" alt="SCADA"></div>
+          <div class="carte-corps">
+            <div class="carte-icone">💻</div>
+            <h3>Supervision & SCADA</h3>
+            <p>Mise en place de systèmes de supervision, téléconduite et automatisation des réseaux.</p>
+            <a href="services.html" class="lien-carte">En savoir plus →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-realisations">
+    <div class="container">
+      <div class="titre-section" data-anime>
+        <span class="etiquette-section">Notre portfolio</span>
+        <h2>Quelques Réalisations</h2>
+      </div>
+      <div class="grille-photos">
+        <div class="photo-item grand" data-anime>
+          <img src="images/poste-htb-construction.jpg" alt="Poste HTB">
+          <div class="photo-voile"><span>Poste HTB en construction</span></div>
+        </div>
+        <div class="photo-item" data-anime>
+          <img src="images/transformateur-hta-htb.jpg" alt="Transformateur">
+          <div class="photo-voile"><span>Transformateur HTA/HTB</span></div>
+        </div>
+        <div class="photo-item" data-anime>
+          <img src="images/armoire-distribution-bt.jpg" alt="Armoire BT">
+          <div class="photo-voile"><span>Armoire distribution BT</span></div>
+        </div>
+        <div class="photo-item" data-anime>
+          <img src="images/poste-transformateur-coucher-soleil.jpg" alt="Poste">
+          <div class="photo-voile"><span>Poste transformateur</span></div>
+        </div>
+        <div class="photo-item" data-anime>
+          <img src="images/lignes-aeriennes-bt.jpg" alt="Lignes">
+          <div class="photo-voile"><span>Lignes aériennes BT</span></div>
+        </div>
+      </div>
+      <div class="centre" data-anime>
+        <a href="realisations.html" class="btn-principal">Voir toutes nos réalisations</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bande-cta">
+    <div class="container bande-contenu">
+      <div data-anime>
+        <h2>Un projet électrique en tête ?</h2>
+        <p>Contactez-nous pour un devis gratuit et personnalisé</p>
+      </div>
+      <a href="contact.html" class="btn-cta" data-anime>Demander un devis</a>
+    </div>
+  </section>
+
+  <footer class="pied-de-page">
+    <div class="container">
+      <div class="footer-grille">
+        <div class="footer-col">
+          <img src="images/logo-plexen.png" alt="PLEXEN" class="footer-logo">
+          <p>Bureau d'études spécialisé en génie électrique. Partenaire agréé SENELEC.</p>
+          <p class="footer-info">NINEA : 011635086 | RCCM : SN THS 2024 A 6152</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="expertise.html">Expertise</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>📍 Parcelles Assainies U19 Villa 176, Dakar</li>
+            <li>📞 75 503 12 96 / 33 885 58 11</li>
+            <li>✉️ Plexen.senegal@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bas">
+        <p>© 2024 PLEXEN — Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
