@@ -5,115 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expertise — PLEXEN</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <nav class="navbar scrolled" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo"><img src="images/logo-plexen.png" alt="PLEXEN"></a>
       <ul class="nav-liens" id="navLiens">
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="expertise.html" class="actif">Expertise</a></li>
+        <li><a href="expertise.html"class="actif">Expertise</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="realisations.html">Réalisations</a></li>
-        <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
       <button class="burger" id="burger"><span></span><span></span><span></span></button>
     </div>
   </nav>
-
-  <section class="entete-page">
-    <div class="entete-page-contenu">
-      <h1>Notre Expertise</h1>
-      <p>Des compétences techniques reconnues au service de vos projets électriques</p>
-      <div class="fil-ariane">
-        <a href="index.html">Accueil</a>
-        <span>/</span>
-        <span>Expertise</span>
-      </div>
+  <section class="entete-interne">
+    <div class="entete-interne-bg" style="background-image:url('images/cellules-hta-blindees.jpg')"></div>
+    <div class="entete-interne-voile"></div>
+    <div class="container entete-interne-contenu">
+      <div class="label-section" data-anime>Notre savoir-faire</div>
+      <h1 data-anime>Notre <span>Expertise</span></h1>
+      <p class="entete-interne-desc" data-anime>+8 ans d'expérience sur les projets d'électrification au Sénégal et en Afrique de l'Ouest</p>
+      <div class="fil-ariane"><a href="index.html">Accueil</a><span>/</span><span>Expertise</span></div>
     </div>
   </section>
 
   <section class="section-expertise">
     <div class="container">
-      <div class="titre-section" data-anime>
-        <span class="etiquette-section">Nos domaines</span>
-        <h2>Domaines d'Expertise Technique</h2>
-      </div>
-      <div class="grille-expertise">
-        <div class="carte-expertise" data-anime>
-          <div class="expertise-icone">⚡</div>
-          <h3>Réseaux HTA</h3>
-          <p>Conception, dimensionnement et réalisation de réseaux Haute Tension A (HTA). Études de protection, plans unifilaires et calculs de chute de tension.</p>
+      <div class="label-section" data-anime>Domaines techniques</div>
+      <h2 class="titre-h2" data-anime>6 Domaines<br>d'<em>Excellence</em></h2>
+      <div class="expertise-grille">
+        <div class="expertise-card" data-anime data-delai="1">
+          <div class="expertise-icone-wrap">⚡</div>
+          <h3>Réseaux HTA / HTB</h3>
+          <p>Conception, dimensionnement et réalisation de réseaux Haute Tension A et B. Études de protection, plans unifilaires et calculs de chute de tension conformes aux normes SENELEC.</p>
         </div>
-        <div class="carte-expertise" data-anime>
-          <div class="expertise-icone">🏭</div>
-          <h3>Postes HTB</h3>
-          <p>Construction et mise en service de postes Haute Tension B (HTB). Jeux de barres, appareillages de coupure, transformateurs de puissance.</p>
+        <div class="expertise-card" data-anime data-delai="2">
+          <div class="expertise-icone-wrap">🏭</div>
+          <h3>Postes Électriques</h3>
+          <p>Construction et mise en service de postes sources HTB et de distribution HTA. Jeux de barres, appareillages de coupure et transformateurs de puissance.</p>
         </div>
-        <div class="carte-expertise" data-anime>
-          <div class="expertise-icone">🔌</div>
-          <h3>Réseaux BT</h3>
-          <p>Distribution Basse Tension, armoires de distribution, colonnes montantes, éclairage public et installations tertiaires industrielles.</p>
+        <div class="expertise-card" data-anime data-delai="3">
+          <div class="expertise-icone-wrap">🔌</div>
+          <h3>Distribution BT</h3>
+          <p>Réseaux de distribution Basse Tension, armoires de distribution, colonnes montantes et éclairage public. Projets d'électrification rurale et périurbaine.</p>
         </div>
-        <div class="carte-expertise" data-anime>
-          <div class="expertise-icone">🛡️</div>
+        <div class="expertise-card" data-anime data-delai="1">
+          <div class="expertise-icone-wrap">🛡️</div>
           <h3>Protection & Contrôle</h3>
-          <p>Études de protection des réseaux, relayage, automatismes et systèmes de contrôle-commande. Paramétrage et mise en service des relais.</p>
+          <p>Études de protection des réseaux, relayage numérique, automatismes et systèmes de contrôle-commande. Paramétrage et mise en service des relais de protection.</p>
         </div>
-        <div class="carte-expertise" data-anime>
-          <div class="expertise-icone">💻</div>
+        <div class="expertise-card" data-anime data-delai="2">
+          <div class="expertise-icone-wrap">🗺️</div>
+          <h3>Cartographie & SIG</h3>
+          <p>Études de cartographie des réseaux électriques. Réalisation des études cartographiques du projet PADAES en collaboration avec BAFETRA et MBH.</p>
+        </div>
+        <div class="expertise-card" data-anime data-delai="3">
+          <div class="expertise-icone-wrap">💻</div>
           <h3>Supervision SCADA</h3>
-          <p>Mise en place de systèmes SCADA, téléconduite des réseaux, interfaces homme-machine (IHM) et collecte de données à distance.</p>
-        </div>
-        <div class="carte-expertise" data-anime>
-          <div class="expertise-icone">📋</div>
-          <h3>Études & Contrôle</h3>
-          <p>Maîtrise d'œuvre, contrôle de conformité, suivi de chantier et réception des travaux. Rapports d'inspection et de mise en service.</p>
+          <p>Mise en place de systèmes SCADA, téléconduite des réseaux, interfaces homme-machine et acquisitions de données pour la gestion en temps réel.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section-presentation" style="background:var(--gris-clair)">
-    <div class="container deux-cols">
-      <div class="col-image" data-anime>
-        <div class="cadre-image">
-          <img src="images/cellules-hta-blindees.jpg" alt="Cellules HTA blindées">
+  <section class="section-presentation" style="padding:80px 0 120px">
+    <div class="container">
+      <div class="presentation-grille">
+        <div class="pres-image" data-anime>
+          <div class="pres-image-trait"></div>
+          <img src="images/equipe-chantier-poste-electrique.jpg" alt="Équipe PLEXEN" class="pres-image-principale">
         </div>
-      </div>
-      <div class="col-texte" data-anime>
-        <span class="etiquette-section">Partenaire SENELEC</span>
-        <h2>Une expertise reconnue par les plus grands acteurs du secteur</h2>
-        <p>PLEXEN est un partenaire agréé de SENELEC, la Société Nationale d'Electricité du Sénégal. Cette accréditation témoigne de la qualité de nos interventions et de notre respect des normes en vigueur.</p>
-        <p>Notre équipe pluridisciplinaire compte des ingénieurs électriciens, des techniciens de maintenance et des chefs de projet expérimentés, capables de gérer des projets de toute envergure.</p>
-        <a href="contact.html" class="btn-principal">Travailler avec nous</a>
+        <div class="pres-texte" data-anime>
+          <div class="label-section">Nos partenaires</div>
+          <h2 class="titre-h2">Une expertise<br>reconnue par les<br><em>plus grands</em></h2>
+          <p>PLEXEN est partenaire agréé de SENELEC et a réalisé des sous-traitances avec les acteurs majeurs du secteur électrique au Sénégal : ASER pour l'électrification rurale, PUDC pour le programme de développement communautaire, et EXCELLEC SA (ex Mina Distribution).</p>
+          <p>Nous avons également réalisé les études de cartographie du projet PADAES en collaboration avec l'entreprise BAFETRA et MBH, renforçant notre expertise en systèmes d'information géographique appliqués aux réseaux électriques.</p>
+          <a href="contact.html" class="btn-orange" style="margin-top:8px"><span>Travailler avec nous</span></a>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="bande-cta">
-    <div class="container bande-contenu">
-      <div data-anime>
-        <h2>Votre projet mérite les meilleurs experts</h2>
-        <p>Contactez-nous pour discuter de votre projet</p>
+    <div class="container">
+      <div class="cta-contenu">
+        <div class="cta-texte" data-anime>
+          <h2>Un projet électrique ?<br>Parlons-en.</h2>
+          <p>Devis gratuit · Réponse sous 48h · Équipe expérimentée</p>
+        </div>
+        <a href="contact.html" class="btn-cta-noir" data-anime>Demander un devis &#8594;</a>
       </div>
-      <a href="contact.html" class="btn-cta" data-anime>Demander un devis</a>
     </div>
   </section>
-
-  <footer class="pied-de-page">
+  <footer class="footer">
     <div class="container">
       <div class="footer-grille">
-        <div class="footer-col">
-          <img src="images/logo-plexen.png" alt="PLEXEN" class="footer-logo">
-          <p>Bureau d'études spécialisé en génie électrique. Partenaire agréé SENELEC.</p>
-          <p class="footer-info">NINEA : 011635086 | RCCM : SN THS 2024 A 6152</p>
+        <div>
+          <img src="images/logo-plexen.png" alt="PLEXEN" class="footer-logo-img">
+          <p class="footer-desc">Bureau d'études spécialisé en génie électrique. Partenaire agréé SENELEC. Études, contrôle et réalisation de projets électriques au Sénégal.</p>
+          <p class="footer-legale">NINEA : 011635086<br>RCCM : SN THS 2024 A 6152</p>
         </div>
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul>
+        <div>
+          <div class="footer-titre-col">Navigation</div>
+          <ul class="footer-liens">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="expertise.html">Expertise</a></li>
             <li><a href="services.html">Services</a></li>
@@ -121,19 +117,29 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul class="footer-contact">
-            <li>📍 Parcelles Assainies U19 Villa 176, Dakar</li>
-            <li>📞 75 503 12 96 / 33 885 58 11</li>
-            <li>✉️ Plexen.senegal@gmail.com</li>
+        <div>
+          <div class="footer-titre-col">Services</div>
+          <ul class="footer-liens">
+            <li><a href="services.html">Études HTA/HTB</a></li>
+            <li><a href="services.html">Électrification rurale</a></li>
+            <li><a href="services.html">Câblage souterrain</a></li>
+            <li><a href="services.html">Supervision SCADA</a></li>
+            <li><a href="services.html">Cartographie réseau</a></li>
           </ul>
         </div>
+        <div>
+          <div class="footer-titre-col">Contact</div>
+          <div class="footer-contact-item"><span>📍</span><span><strong>Adresse</strong>Parcelles Assainies U19 Villa 176, Dakar</span></div>
+          <div class="footer-contact-item"><span>📞</span><span><strong>Téléphone</strong>75 503 12 96 / 33 885 58 11</span></div>
+          <div class="footer-contact-item"><span>✉️</span><span><strong>Email</strong>Plexen.senegal@gmail.com</span></div>
+        </div>
       </div>
-      <div class="footer-bas"><p>© 2024 PLEXEN — Tous droits réservés</p></div>
+      <div class="footer-bas">
+        <span>© 2024 <span class="footer-bas-orange">PLEXEN</span> — Tous droits réservés</span>
+        <span>Étude · Contrôle · Réalisation Électrique</span>
+      </div>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

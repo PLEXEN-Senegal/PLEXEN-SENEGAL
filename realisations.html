@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Réalisations — PLEXEN</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <nav class="navbar scrolled" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo"><img src="images/logo-plexen.png" alt="PLEXEN"></a>
@@ -16,190 +14,150 @@
         <li><a href="index.html">Accueil</a></li>
         <li><a href="expertise.html">Expertise</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="realisations.html" class="actif">Réalisations</a></li>
-        <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        <li><a href="realisations.html"class="actif">Réalisations</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
       <button class="burger" id="burger"><span></span><span></span><span></span></button>
     </div>
   </nav>
-
-  <section class="entete-page">
-    <div class="entete-page-contenu">
-      <h1>Nos Réalisations</h1>
-      <p>Une sélection de nos projets réalisés au Sénégal et en Afrique de l'Ouest</p>
-      <div class="fil-ariane">
-        <a href="index.html">Accueil</a>
-        <span>/</span>
-        <span>Réalisations</span>
-      </div>
+  <section class="entete-interne">
+    <div class="entete-interne-bg" style="background-image:url('images/poste-transformateur-coucher-soleil.jpg')"></div>
+    <div class="entete-interne-voile"></div>
+    <div class="container entete-interne-contenu">
+      <div class="label-section" data-anime>Notre portfolio</div>
+      <h1 data-anime>Nos <span>Réalisations</span></h1>
+      <p class="entete-interne-desc" data-anime>Une sélection de nos projets réalisés au Sénégal pour SENELEC, ASER, PUDC et nos partenaires privés</p>
+      <div class="fil-ariane"><a href="index.html">Accueil</a><span>/</span><span>Réalisations</span></div>
     </div>
   </section>
 
   <section class="section-portfolio">
     <div class="container">
-      <div class="titre-section" data-anime>
-        <span class="etiquette-section">Notre portfolio</span>
-        <h2>Projets Réalisés</h2>
-      </div>
-      <div class="grille-portfolio">
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/poste-htb-construction.jpg" alt="Poste HTB">
-          </div>
-          <div class="projet-corps">
-            <h3>Construction Poste HTB</h3>
-            <p>Construction et mise en service d'un poste source Haute Tension B. Génie civil, montage appareillage et câblage complet.</p>
-            <span class="projet-tag">HTB — Poste Source</span>
+      <div class="label-section" data-anime>Projets</div>
+      <h2 class="titre-h2" data-anime style="color:var(--blanc)">+120 Projets<br><em>Réalisés</em></h2>
+      <div class="portfolio-grille">
+        <div class="portfolio-item" data-anime data-delai="1">
+          <div class="portfolio-ligne"></div>
+          <img src="images/poste-htb-construction.jpg" alt="Poste HTB">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">HTB — Construction</div>
+            <div class="portfolio-nom">Poste Source HTB</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/cellules-hta-blindees.jpg" alt="Cellules HTA">
-          </div>
-          <div class="projet-corps">
-            <h3>Cellules HTA Blindées</h3>
-            <p>Fourniture, montage et mise en service de cellules HTA blindées SF6 pour poste de distribution publique.</p>
-            <span class="projet-tag">HTA — Distribution</span>
+        <div class="portfolio-item" data-anime data-delai="2">
+          <div class="portfolio-ligne"></div>
+          <img src="images/cellules-hta-blindees.jpg" alt="Cellules HTA">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">HTA — Distribution</div>
+            <div class="portfolio-nom">Cellules blindées SF6</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/transformateur-hta-htb.jpg" alt="Transformateur">
-          </div>
-          <div class="projet-corps">
-            <h3>Transformateur de Puissance HTA/HTB</h3>
-            <p>Installation et mise en service d'un transformateur de puissance HTA/HTB. Raccordements, essais et mise sous tension.</p>
-            <span class="projet-tag">HTA/HTB — Transformateur</span>
+        <div class="portfolio-item" data-anime data-delai="3">
+          <div class="portfolio-ligne"></div>
+          <img src="images/transformateur-hta-htb.jpg" alt="Transformateur">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">HTA/HTB</div>
+            <div class="portfolio-nom">Transformateur de puissance</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/cable-souterrain-tranchee.jpg" alt="Câblage souterrain">
-          </div>
-          <div class="projet-corps">
-            <h3>Câblage Souterrain HTA</h3>
-            <p>Réalisation de tranchées et pose de câbles souterrains HTA en milieu urbain. Signalisation et remblaiement conformes.</p>
-            <span class="projet-tag">HTA — Souterrain</span>
+        <div class="portfolio-item" data-anime data-delai="1">
+          <div class="portfolio-ligne"></div>
+          <img src="images/cable-souterrain-tranchee.jpg" alt="Câblage">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">BT — Souterrain</div>
+            <div class="portfolio-nom">Câblage souterrain urbain</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/armoire-distribution-bt.jpg" alt="Armoire BT">
-          </div>
-          <div class="projet-corps">
-            <h3>Armoire de Distribution BT</h3>
-            <p>Conception et réalisation d'armoires de distribution Basse Tension avec analyseur d'énergie et protection différentielle.</p>
-            <span class="projet-tag">BT — Distribution</span>
+        <div class="portfolio-item" data-anime data-delai="2">
+          <div class="portfolio-ligne"></div>
+          <img src="images/armoire-distribution-bt.jpg" alt="Armoire BT">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">BT — Distribution</div>
+            <div class="portfolio-nom">Armoire de distribution BT</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/poste-compact-3md.jpg" alt="Poste compact">
-          </div>
-          <div class="projet-corps">
-            <h3>Poste Compact 3MD</h3>
-            <p>Installation de postes compacts préfabriqués type 3MD pour la distribution d'électricité en zone périurbaine.</p>
-            <span class="projet-tag">HTA — Poste Compact</span>
+        <div class="portfolio-item" data-anime data-delai="3">
+          <div class="portfolio-ligne"></div>
+          <img src="images/poste-compact-3md.jpg" alt="Poste compact">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">HTA — Poste compact</div>
+            <div class="portfolio-nom">Poste compact 3MD</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/lignes-aeriennes-bt.jpg" alt="Lignes aériennes">
-          </div>
-          <div class="projet-corps">
-            <h3>Lignes Aériennes BT</h3>
-            <p>Construction de lignes aériennes basse tension en zone rurale. Pose de poteaux et déroulage de câbles torsadés.</p>
-            <span class="projet-tag">BT — Aérien</span>
+        <div class="portfolio-item" data-anime data-delai="1">
+          <div class="portfolio-ligne"></div>
+          <img src="images/lignes-aeriennes-bt.jpg" alt="Lignes aériennes">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">BT — Aérien — ASER</div>
+            <div class="portfolio-nom">Lignes aériennes BT rurales</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/cabine-hta-murale.jpg" alt="Cabine HTA">
-          </div>
-          <div class="projet-corps">
-            <h3>Cabine HTA Murale</h3>
-            <p>Réhabilitation et raccordement d'une cabine HTA murale existante. Remplacement des équipements vétustes et mise aux normes.</p>
-            <span class="projet-tag">HTA — Cabine</span>
+        <div class="portfolio-item" data-anime data-delai="2">
+          <div class="portfolio-ligne"></div>
+          <img src="images/poste-transformateur-coucher-soleil.jpg" alt="Poste transformateur">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">HTB — Maintenance</div>
+            <div class="portfolio-nom">Poste transformateur HTB</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/supervision-scada.jpg" alt="SCADA">
-          </div>
-          <div class="projet-corps">
-            <h3>Système SCADA</h3>
-            <p>Mise en place d'un système de supervision et téléconduite pour la gestion en temps réel d'un réseau de distribution.</p>
-            <span class="projet-tag">SCADA — Supervision</span>
+        <div class="portfolio-item" data-anime data-delai="3">
+          <div class="portfolio-ligne"></div>
+          <img src="images/supervision-scada.jpg" alt="SCADA">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">SCADA — PADAES</div>
+            <div class="portfolio-nom">Supervision & Cartographie</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/poste-transformateur-coucher-soleil.jpg" alt="Poste transformateur">
-          </div>
-          <div class="projet-corps">
-            <h3>Poste Transformateur HTB</h3>
-            <p>Réalisation d'un poste transformateur HTB avec protection différentielle, parafoudres et mise à la terre.</p>
-            <span class="projet-tag">HTB — Transformateur</span>
+        <div class="portfolio-item" data-anime data-delai="1">
+          <div class="portfolio-ligne"></div>
+          <img src="images/cabine-hta-murale.jpg" alt="Cabine HTA">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">HTA — Réhabilitation</div>
+            <div class="portfolio-nom">Cabine HTA murale</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/equipe-chantier-poste-electrique.jpg" alt="Équipe chantier">
-          </div>
-          <div class="projet-corps">
-            <h3>Chantier Poste Électrique</h3>
-            <p>Supervision et coordination d'un chantier de construction de poste électrique avec équipes pluridisciplinaires.</p>
-            <span class="projet-tag">HTB — Maîtrise d'œuvre</span>
+        <div class="portfolio-item" data-anime data-delai="2">
+          <div class="portfolio-ligne"></div>
+          <img src="images/equipe-chantier-poste-electrique.jpg" alt="Chantier">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">HTB — Maîtrise d'œuvre</div>
+            <div class="portfolio-nom">Chantier poste électrique</div>
           </div>
         </div>
-
-        <div class="projet-card" data-anime>
-          <div class="projet-img">
-            <img src="images/transformateur-hta-htb.jpg" alt="Installation équipements">
-          </div>
-          <div class="projet-corps">
-            <h3>Installation Équipements HTB</h3>
-            <p>Montage, raccordement et mise en service d'équipements HTB sur site existant. Essais de mise en tension.</p>
-            <span class="projet-tag">HTB — Installation</span>
+        <div class="portfolio-item" data-anime data-delai="3">
+          <div class="portfolio-ligne"></div>
+          <img src="images/transformateur-hta-htb.jpg" alt="Installation">
+          <div class="portfolio-overlay">
+            <div class="portfolio-tag">HTB — EXCELLEC SA</div>
+            <div class="portfolio-nom">Installation équipements HTB</div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <section class="bande-cta">
-    <div class="container bande-contenu">
-      <div data-anime>
-        <h2>Votre projet sera notre prochaine réalisation</h2>
-        <p>Contactez-nous dès aujourd'hui pour en discuter</p>
+    <div class="container">
+      <div class="cta-contenu">
+        <div class="cta-texte" data-anime>
+          <h2>Un projet électrique ?<br>Parlons-en.</h2>
+          <p>Devis gratuit · Réponse sous 48h · Équipe expérimentée</p>
+        </div>
+        <a href="contact.html" class="btn-cta-noir" data-anime>Demander un devis &#8594;</a>
       </div>
-      <a href="contact.html" class="btn-cta" data-anime>Démarrer un projet</a>
     </div>
   </section>
-
-  <footer class="pied-de-page">
+  <footer class="footer">
     <div class="container">
       <div class="footer-grille">
-        <div class="footer-col">
-          <img src="images/logo-plexen.png" alt="PLEXEN" class="footer-logo">
-          <p>Bureau d'études spécialisé en génie électrique. Partenaire agréé SENELEC.</p>
-          <p class="footer-info">NINEA : 011635086 | RCCM : SN THS 2024 A 6152</p>
+        <div>
+          <img src="images/logo-plexen.png" alt="PLEXEN" class="footer-logo-img">
+          <p class="footer-desc">Bureau d'études spécialisé en génie électrique. Partenaire agréé SENELEC. Études, contrôle et réalisation de projets électriques au Sénégal.</p>
+          <p class="footer-legale">NINEA : 011635086<br>RCCM : SN THS 2024 A 6152</p>
         </div>
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul>
+        <div>
+          <div class="footer-titre-col">Navigation</div>
+          <ul class="footer-liens">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="expertise.html">Expertise</a></li>
             <li><a href="services.html">Services</a></li>
@@ -207,16 +165,27 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul class="footer-contact">
-            <li>📍 Parcelles Assainies U19 Villa 176, Dakar</li>
-            <li>📞 75 503 12 96 / 33 885 58 11</li>
-            <li>✉️ Plexen.senegal@gmail.com</li>
+        <div>
+          <div class="footer-titre-col">Services</div>
+          <ul class="footer-liens">
+            <li><a href="services.html">Études HTA/HTB</a></li>
+            <li><a href="services.html">Électrification rurale</a></li>
+            <li><a href="services.html">Câblage souterrain</a></li>
+            <li><a href="services.html">Supervision SCADA</a></li>
+            <li><a href="services.html">Cartographie réseau</a></li>
           </ul>
         </div>
+        <div>
+          <div class="footer-titre-col">Contact</div>
+          <div class="footer-contact-item"><span>📍</span><span><strong>Adresse</strong>Parcelles Assainies U19 Villa 176, Dakar</span></div>
+          <div class="footer-contact-item"><span>📞</span><span><strong>Téléphone</strong>75 503 12 96 / 33 885 58 11</span></div>
+          <div class="footer-contact-item"><span>✉️</span><span><strong>Email</strong>Plexen.senegal@gmail.com</span></div>
+        </div>
       </div>
-      <div class="footer-bas"><p>© 2024 PLEXEN — Tous droits réservés</p></div>
+      <div class="footer-bas">
+        <span>© 2024 <span class="footer-bas-orange">PLEXEN</span> — Tous droits réservés</span>
+        <span>Étude · Contrôle · Réalisation Électrique</span>
+      </div>
     </div>
   </footer>
   <script src="script.js"></script>
