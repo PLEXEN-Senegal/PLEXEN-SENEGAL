@@ -95,18 +95,4 @@ document.addEventListener('DOMContentLoaded', function () {
     a.classList.toggle('actif', a.getAttribute('href') === page);
   });
 
-}
-  // ── 7. ANIMATION SLOGAN ──────────────────────
-  var sloganSection = document.querySelector('.section-slogan');
-  function checkSlogan() {
-    if (!sloganSection) return;
-    var rect = sloganSection.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      sloganSection.classList.add('visible');
-    }
-  }
-  window.addEventListener('scroll', checkSlogan, { passive: true });
-  checkSlogan();
-
-
 });
